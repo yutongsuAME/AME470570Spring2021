@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <script src='asyncReq.js'> </script>
+
+  <script>
+    function calc(){
+      var a = parseFloat(document.getElementById("valA").value);
+      var b = parseFloat(document.getElementById("valB").value);
+	  var c = parseFloat(document.getElementById("valC").value);
+	  var d = parseFloat(document.getElementById("valD").value);
+      var op = document.getElementById("operator").value;
+    }
+  </script>
+</head>
+
+<body>
+
+  <input type='text' id='valA' onchange='calc()'>
+  <select id='operator' onchange='calc()'>
+    <option val='add'>+</option>
+    <option val='sub'>-</option>
+    <option val='mul'>*</option>
+    <option val='div'>/</option>
+  </select>
+  <input type='text' id='valB' onchange='calc()'>
+  <select id='operator' onchange='calc()'>
+    <option val='add'>+</option>
+    <option val='sub'>-</option>
+    <option val='mul'>*</option>
+    <option val='div'>/</option>
+  </select>
+  <input type='text' id='valC' onchange='calc()'>
+  <select id='operator' onchange='calc()'>
+    <option val='add'>+</option>
+    <option val='sub'>-</option>
+    <option val='mul'>*</option>
+    <option val='div'>/</option>
+  </select>
+  <input type='text' id='valD' onchange='calc()'>
+  <select id='operator' onchange='calc()'>
+    <option val='add'>+</option>
+    <option val='sub'>-</option>
+    <option val='mul'>*</option>
+    <option val='div'>/</option>
+  </select>
+  
+
+  <div id='result'> </div>
+</body>
+
+</html>
