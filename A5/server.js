@@ -9,7 +9,7 @@ var hostname = process.env.HOSTNAME || 'localhost';
 var port = 1234;
 
 var MS = require("mongoskin");
-var db = MS.db("mongodb://34.219.163.158:27017/rssFeeds")
+var db = MS.db("mongodb://18.222.252.162:27017/rssFeeds")
 var rssList = [];
 
 app.get("/", function (req, res) {
