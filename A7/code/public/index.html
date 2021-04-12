@@ -22,7 +22,7 @@ var fileUploaded = function()
     xhr.onreadystatechange = function(e) {  
       if (xhr.readyState != 4) { return; }
         // callback logic
-       document.getElementById("preview").src = "https://bucket470570.s3-us-west-2.amazonaws.com/" + fileInput;
+       document.getElementById("preview").src = "https://bucket470570su.s3.us-east-2.amazonaws.com/" + fileInput;
     };
     xhr.open("POST", "/uploadFile", true);
     xhr.send(fd);
@@ -43,7 +43,7 @@ function saveImageEdit(){
         cancelImageEdit();
         if (xhr.readyState != 4) { return; }
           // callback logic
-        document.getElementById("preview").src = "https://bucket470570.s3-us-west-2.amazonaws.com/" + fileInput + "?t=" + new Date().getTime();
+        document.getElementById("preview").src = "https://bucket470570su.s3.us-east-2.amazonaws.com/" + fileInput + "?t=" + new Date().getTime();
       };
       xhr.open("POST", "/uploadImage", true);
       xhr.send(fd);
